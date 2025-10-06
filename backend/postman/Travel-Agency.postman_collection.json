@@ -1,0 +1,3746 @@
+{
+	"info": {
+		"_postman_id": "7d80de5b-5346-4533-9dae-9c2eea59df81",
+		"name": "Travel Agency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40073765"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Travel",
+					"item": [
+						{
+							"name": "display all travels",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|oYMC3tkwL9y5ouK7DglUTCmfqM4M1F77jHmFRdqkf9656eee",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/travels",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"travels"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "display all travels",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/travels",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"travels"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 21:51:03 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"0199aa85-a18e-710d-b18d-d9ad01eaa476\",\n            \"name\": \"UK Adventure trav\",\n            \"slug\": \"uk-adventure\",\n            \"country\": \"UK\",\n            \"is_public\": 1,\n            \"description\": \"Explore the UK countryside\"\n        },\n        {\n            \"id\": \"0199aa85-a195-7172-aa85-3ffd0ed750ac\",\n            \"name\": \"Paris Getaway\",\n            \"slug\": \"paris-getaway\",\n            \"country\": \"France\",\n            \"is_public\": 1,\n            \"description\": \"Romantic escape in Paris\"\n        },\n        {\n            \"id\": \"0199aa85-a1a3-73db-82bd-cd857ae352d7\",\n            \"name\": \"Tokyo Lights\",\n            \"slug\": \"tokyo-lights\",\n            \"country\": \"Japan\",\n            \"is_public\": 1,\n            \"description\": \"Experience Tokyo nightlife\"\n        },\n        {\n            \"id\": \"0199aa85-a1a9-7218-afd9-17992d4699ac\",\n            \"name\": \"New York Buzz\",\n            \"slug\": \"new-york-buzz\",\n            \"country\": \"USA\",\n            \"is_public\": 1,\n            \"description\": \"Feel the energy of NYC\"\n        },\n        {\n            \"id\": \"0199aa85-a1af-7345-99e0-9b5bfb8542c8\",\n            \"name\": \"Desert Safari\",\n            \"slug\": \"desert-safari\",\n            \"country\": \"UAE\",\n            \"is_public\": 1,\n            \"description\": \"Thrilling ride in Dubai\"\n        },\n        {\n            \"id\": \"0199aa85-a1b6-73fe-a37a-03e47f461b03\",\n            \"name\": \"Swiss Alps\",\n            \"slug\": \"swiss-alps\",\n            \"country\": \"Switzerland\",\n            \"is_public\": 1,\n            \"description\": \"Skiing in Switzerland\"\n        },\n        {\n            \"id\": \"0199aa85-a1bc-70a5-9f00-279493da15a8\",\n            \"name\": \"Cairo Mysteries\",\n            \"slug\": \"cairo-mysteries\",\n            \"country\": \"Egypt\",\n            \"is_public\": 1,\n            \"description\": \"Discover ancient Egypt\"\n        },\n        {\n            \"id\": \"0199aa85-a1c3-7059-aabd-26e0061097ba\",\n            \"name\": \"Sydney Shores\",\n            \"slug\": \"sydney-shores\",\n            \"country\": \"Australia\",\n            \"is_public\": 1,\n            \"description\": \"Beach vibes in Australia\"\n        },\n        {\n            \"id\": \"0199aa85-a1ca-73ca-818e-d8ac283248b3\",\n            \"name\": \"Hidden Himalayas\",\n            \"slug\": \"hidden-himalayas\",\n            \"country\": \"Nepal\",\n            \"is_public\": 0,\n            \"description\": \"Remote trekking adventure\"\n        },\n        {\n            \"id\": \"0199aa85-a1d0-7015-9e26-fb90fbe4b034\",\n            \"name\": \"Secret Amazon\",\n            \"slug\": \"secret-amazon\",\n            \"country\": \"Brazil\",\n            \"is_public\": 0,\n            \"description\": \"Uncharted jungle trails\"\n        },\n        {\n            \"id\": \"0199aaa2-d1c4-72d7-958a-cc7c47f7a594\",\n            \"name\": \"UK Adventure travc\",\n            \"slug\": \"uk-adventure-travc\",\n            \"country\": \"UK\",\n            \"is_public\": 1,\n            \"description\": \"it i\"\n        },\n        {\n            \"id\": \"0199aaae-feee-7182-9ce0-fc7822a11ce0\",\n            \"name\": \"UK Adventure travccc\",\n            \"slug\": \"uk-adventure-travccc\",\n            \"country\": \"UK\",\n            \"is_public\": 1,\n            \"description\": \"dsfsdf\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "show a travel",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|oYMC3tkwL9y5ouK7DglUTCmfqM4M1F77jHmFRdqkf9656eee",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/travels/0199aa85-a18e-710d-b18d-d9ad01eaa476",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"travels",
+										"0199aa85-a18e-710d-b18d-d9ad01eaa476"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "show a travel",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/travels/0199aa85-a18e-710d-b18d-d9ad01eaa476",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"travels",
+												"0199aa85-a18e-710d-b18d-d9ad01eaa476"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 21:55:27 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"0199aa85-a18e-710d-b18d-d9ad01eaa476\",\n        \"name\": \"UK Adventure trav\",\n        \"slug\": \"uk-adventure\",\n        \"country\": \"UK\",\n        \"is_public\": 1,\n        \"description\": \"Explore the UK countryside\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "store a travel",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|oYMC3tkwL9y5ouK7DglUTCmfqM4M1F77jHmFRdqkf9656eee",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Paris travel\",\r\n    \"country\":\"France\",\r\n    \"description\":\"this gonna be a great travel\",\r\n    \"number_of_days\":15,\r\n    \"is_public\":true\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/travels",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"travels"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "store a travel",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"Paris travel\",\r\n    \"country\":\"France\",\r\n    \"description\":\"this gonna be a great travel\",\r\n    \"number_of_days\":15,\r\n    \"is_public\":true\r\n\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/admin/travels",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"travels"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 21:56:03 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"0199ac13-31ea-70cd-9618-c6f22318d036\",\n        \"name\": \"Paris travel\",\n        \"slug\": \"paris-travel\",\n        \"country\": \"France\",\n        \"is_public\": true,\n        \"description\": \"this gonna be a great travel\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "delete a travel",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|oYMC3tkwL9y5ouK7DglUTCmfqM4M1F77jHmFRdqkf9656eee",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/travels/0199aa85-a18e-710d-b18d-d9ad01eaa476",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"travels",
+										"0199aa85-a18e-710d-b18d-d9ad01eaa476"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete a travel",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/travels/0199aa85-a18e-710d-b18d-d9ad01eaa476",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"travels",
+												"0199aa85-a18e-710d-b18d-d9ad01eaa476"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 22:02:06 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Travel removed successfully.\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Tour",
+					"item": [
+						{
+							"name": "display all the tours",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "9|0vcIZgoTkahhIptgMmJFl8hd9dA5ieDz9aOertNvd06889f1",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Paris travel\",\r\n    \"country\":\"France\",\r\n    \"description\":\"this gonna be a great travel\",\r\n    \"number_of_days\":15,\r\n    \"is_public\":true\r\n\r\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/tours",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"tours"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "display all the tours",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/tours",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"tours"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 21:56:42 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"0199aa85-a209-702e-a5f7-d92cc1cbcdc7\",\n            \"name\": \"UK Adventure Tour 1\",\n            \"slug\": \"uk-adventure-tour-1\",\n            \"starting_date\": \"2025-11-17\",\n            \"ending_date\": \"2025-11-19\",\n            \"avgRate\": 0,\n            \"price\": \"287.91\",\n            \"number_of_days\": 3,\n            \"number_of_nights\": 2\n        },\n        {\n            \"id\": \"0199aa85-a211-73fc-a718-ced508a796be\",\n            \"name\": \"UK Adventure Tour 2\",\n            \"slug\": \"uk-adventure-tour-2\",\n            \"starting_date\": \"2025-10-29\",\n            \"ending_date\": \"2025-11-03\",\n            \"avgRate\": 0,\n            \"price\": \"354.32\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199aa85-a21d-72a7-a3af-910d0d21c549\",\n            \"name\": \"UK Adventure Tour 3\",\n            \"slug\": \"uk-adventure-tour-3\",\n            \"starting_date\": \"2025-10-15\",\n            \"ending_date\": \"2025-10-18\",\n            \"avgRate\": 0,\n            \"price\": \"195.38\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199aa85-a227-7365-a514-177b5fa58815\",\n            \"name\": \"Paris Getaway Tour 1\",\n            \"slug\": \"paris-getaway-tour-1\",\n            \"starting_date\": \"2025-10-16\",\n            \"ending_date\": \"2025-10-25\",\n            \"avgRate\": 0,\n            \"price\": \"370.12\",\n            \"number_of_days\": 10,\n            \"number_of_nights\": 9\n        },\n        {\n            \"id\": \"0199aa85-a22f-7216-9bd7-4c72d93d3da7\",\n            \"name\": \"Paris Getaway Tour 2\",\n            \"slug\": \"paris-getaway-tour-2\",\n            \"starting_date\": \"2025-11-28\",\n            \"ending_date\": \"2025-12-03\",\n            \"avgRate\": 2,\n            \"price\": \"221.14\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199aa85-a238-710e-9070-96d239223fed\",\n            \"name\": \"Paris Getaway Tour 3\",\n            \"slug\": \"paris-getaway-tour-3\",\n            \"starting_date\": \"2025-10-21\",\n            \"ending_date\": \"2025-10-24\",\n            \"avgRate\": 0,\n            \"price\": \"290.23\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199aa85-a241-70cc-a3ef-37715a9ebd73\",\n            \"name\": \"Tokyo Lights Tour 1\",\n            \"slug\": \"tokyo-lights-tour-1\",\n            \"starting_date\": \"2025-11-17\",\n            \"ending_date\": \"2025-11-21\",\n            \"avgRate\": 2.5,\n            \"price\": \"493.42\",\n            \"number_of_days\": 5,\n            \"number_of_nights\": 4\n        },\n        {\n            \"id\": \"0199aa85-a24a-7115-8448-5321bdc8a320\",\n            \"name\": \"Tokyo Lights Tour 2\",\n            \"slug\": \"tokyo-lights-tour-2\",\n            \"starting_date\": \"2025-10-19\",\n            \"ending_date\": \"2025-10-23\",\n            \"avgRate\": 0,\n            \"price\": \"307.94\",\n            \"number_of_days\": 5,\n            \"number_of_nights\": 4\n        },\n        {\n            \"id\": \"0199aa85-a253-72cf-99b8-5a2e395155db\",\n            \"name\": \"Tokyo Lights Tour 3\",\n            \"slug\": \"tokyo-lights-tour-3\",\n            \"starting_date\": \"2025-11-20\",\n            \"ending_date\": \"2025-11-22\",\n            \"avgRate\": 0,\n            \"price\": \"204.35\",\n            \"number_of_days\": 3,\n            \"number_of_nights\": 2\n        },\n        {\n            \"id\": \"0199aa85-a25b-7346-b6ac-2824cee7df68\",\n            \"name\": \"New York Buzz Tour 1\",\n            \"slug\": \"new-york-buzz-tour-1\",\n            \"starting_date\": \"2025-10-26\",\n            \"ending_date\": \"2025-10-31\",\n            \"avgRate\": 3,\n            \"price\": \"308.09\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199aa85-a263-72b2-a109-4bba615160b9\",\n            \"name\": \"New York Buzz Tour 2\",\n            \"slug\": \"new-york-buzz-tour-2\",\n            \"starting_date\": \"2025-11-22\",\n            \"ending_date\": \"2025-11-27\",\n            \"avgRate\": 1,\n            \"price\": \"237.11\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199aa85-a26b-72eb-92a3-9b5d41d1b8c4\",\n            \"name\": \"New York Buzz Tour 3\",\n            \"slug\": \"new-york-buzz-tour-3\",\n            \"starting_date\": \"2025-10-16\",\n            \"ending_date\": \"2025-10-18\",\n            \"avgRate\": 0,\n            \"price\": \"330.87\",\n            \"number_of_days\": 3,\n            \"number_of_nights\": 2\n        },\n        {\n            \"id\": \"0199aa85-a274-7088-980e-c4ad9e75cf6d\",\n            \"name\": \"Desert Safari Tour 1\",\n            \"slug\": \"desert-safari-tour-1\",\n            \"starting_date\": \"2025-10-22\",\n            \"ending_date\": \"2025-10-26\",\n            \"avgRate\": 0,\n            \"price\": \"455.09\",\n            \"number_of_days\": 5,\n            \"number_of_nights\": 4\n        },\n        {\n            \"id\": \"0199aa85-a27c-7330-ab8a-c372aa2a3839\",\n            \"name\": \"Desert Safari Tour 2\",\n            \"slug\": \"desert-safari-tour-2\",\n            \"starting_date\": \"2025-11-22\",\n            \"ending_date\": \"2025-11-27\",\n            \"avgRate\": 0,\n            \"price\": \"223.85\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199aa85-a284-724f-8b8f-e8053373d4ea\",\n            \"name\": \"Desert Safari Tour 3\",\n            \"slug\": \"desert-safari-tour-3\",\n            \"starting_date\": \"2025-11-21\",\n            \"ending_date\": \"2025-11-26\",\n            \"avgRate\": 0,\n            \"price\": \"248.91\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199aa85-a28d-735f-9b6f-7ffae2af717f\",\n            \"name\": \"Swiss Alps Tour 1\",\n            \"slug\": \"swiss-alps-tour-1\",\n            \"starting_date\": \"2025-10-26\",\n            \"ending_date\": \"2025-10-29\",\n            \"avgRate\": 1,\n            \"price\": \"230.51\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199aa85-a295-73c6-93e2-8e7d1bcbae49\",\n            \"name\": \"Swiss Alps Tour 2\",\n            \"slug\": \"swiss-alps-tour-2\",\n            \"starting_date\": \"2025-12-01\",\n            \"ending_date\": \"2025-12-03\",\n            \"avgRate\": 0,\n            \"price\": \"232.52\",\n            \"number_of_days\": 3,\n            \"number_of_nights\": 2\n        },\n        {\n            \"id\": \"0199aa85-a29e-712a-8042-6d6ef1a6c451\",\n            \"name\": \"Swiss Alps Tour 3\",\n            \"slug\": \"swiss-alps-tour-3\",\n            \"starting_date\": \"2025-12-02\",\n            \"ending_date\": \"2025-12-07\",\n            \"avgRate\": 0,\n            \"price\": \"313.24\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199aa85-a2a7-73e9-ba25-29d5a40e03b7\",\n            \"name\": \"Cairo Mysteries Tour 1\",\n            \"slug\": \"cairo-mysteries-tour-1\",\n            \"starting_date\": \"2025-10-23\",\n            \"ending_date\": \"2025-10-27\",\n            \"avgRate\": 1,\n            \"price\": \"326.04\",\n            \"number_of_days\": 5,\n            \"number_of_nights\": 4\n        },\n        {\n            \"id\": \"0199aa85-a2b1-71f3-b2a6-ae963405859f\",\n            \"name\": \"Cairo Mysteries Tour 2\",\n            \"slug\": \"cairo-mysteries-tour-2\",\n            \"starting_date\": \"2025-10-19\",\n            \"ending_date\": \"2025-10-23\",\n            \"avgRate\": 0,\n            \"price\": \"356.27\",\n            \"number_of_days\": 5,\n            \"number_of_nights\": 4\n        },\n        {\n            \"id\": \"0199aa85-a2ba-731f-a257-b3a514273165\",\n            \"name\": \"Cairo Mysteries Tour 3\",\n            \"slug\": \"cairo-mysteries-tour-3\",\n            \"starting_date\": \"2025-11-28\",\n            \"ending_date\": \"2025-12-01\",\n            \"avgRate\": 0,\n            \"price\": \"309.54\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199aa85-a2c3-701c-b988-5d82aa87b43a\",\n            \"name\": \"Sydney Shores Tour 1\",\n            \"slug\": \"sydney-shores-tour-1\",\n            \"starting_date\": \"2025-10-25\",\n            \"ending_date\": \"2025-10-28\",\n            \"avgRate\": 0,\n            \"price\": \"294.38\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199aa85-a2cc-72e7-b7a3-7ec5e196d67e\",\n            \"name\": \"Sydney Shores Tour 2\",\n            \"slug\": \"sydney-shores-tour-2\",\n            \"starting_date\": \"2025-10-24\",\n            \"ending_date\": \"2025-10-28\",\n            \"avgRate\": 3,\n            \"price\": \"302.79\",\n            \"number_of_days\": 5,\n            \"number_of_nights\": 4\n        },\n        {\n            \"id\": \"0199aa85-a2d5-724f-a000-1f798093553b\",\n            \"name\": \"Sydney Shores Tour 3\",\n            \"slug\": \"sydney-shores-tour-3\",\n            \"starting_date\": \"2025-11-05\",\n            \"ending_date\": \"2025-11-09\",\n            \"avgRate\": 0,\n            \"price\": \"481.75\",\n            \"number_of_days\": 5,\n            \"number_of_nights\": 4\n        },\n        {\n            \"id\": \"0199aa85-a2dd-708f-9724-2ae3fa8d8f18\",\n            \"name\": \"Hidden Himalayas Tour 1\",\n            \"slug\": \"hidden-himalayas-tour-1\",\n            \"starting_date\": \"2025-11-20\",\n            \"ending_date\": \"2025-11-23\",\n            \"avgRate\": 3,\n            \"price\": \"436.87\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199aa85-a2e6-72bd-8012-49da47fb28ed\",\n            \"name\": \"Hidden Himalayas Tour 2\",\n            \"slug\": \"hidden-himalayas-tour-2\",\n            \"starting_date\": \"2025-11-13\",\n            \"ending_date\": \"2025-11-18\",\n            \"avgRate\": 2,\n            \"price\": \"271.64\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199aa85-a2ee-739a-bc0d-a0ddfb919a72\",\n            \"name\": \"Hidden Himalayas Tour 3\",\n            \"slug\": \"hidden-himalayas-tour-3\",\n            \"starting_date\": \"2025-11-11\",\n            \"ending_date\": \"2025-11-14\",\n            \"avgRate\": 0,\n            \"price\": \"387.68\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199aa85-a2f7-7304-acbb-056637b118ff\",\n            \"name\": \"Secret Amazon Tour 1\",\n            \"slug\": \"secret-amazon-tour-1\",\n            \"starting_date\": \"2025-11-09\",\n            \"ending_date\": \"2025-11-11\",\n            \"avgRate\": 2,\n            \"price\": \"294.43\",\n            \"number_of_days\": 3,\n            \"number_of_nights\": 2\n        },\n        {\n            \"id\": \"0199aa85-a2ff-70e6-8834-b11717b6390b\",\n            \"name\": \"Secret Amazon Tour 2\",\n            \"slug\": \"secret-amazon-tour-2\",\n            \"starting_date\": \"2025-11-06\",\n            \"ending_date\": \"2025-11-09\",\n            \"avgRate\": 0,\n            \"price\": \"374.25\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199aa85-a307-7397-8deb-a6915318085f\",\n            \"name\": \"Secret Amazon Tour 3\",\n            \"slug\": \"secret-amazon-tour-3\",\n            \"starting_date\": \"2025-11-23\",\n            \"ending_date\": \"2025-11-26\",\n            \"avgRate\": 0,\n            \"price\": \"136.86\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199aaa7-a6ba-7287-9080-868f21608e84\",\n            \"name\": \"UK tour 4\",\n            \"slug\": \"uk-tour-4\",\n            \"starting_date\": \"2025-09-03\",\n            \"ending_date\": \"2025-09-23\",\n            \"avgRate\": 0,\n            \"price\": \"1,205.00\",\n            \"number_of_days\": 21,\n            \"number_of_nights\": 20\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "show a tour",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "12|IbKBU9so2a3HemGB2HbEzccqIssKDM4wZhnBfk2C52a72edc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/tours/01992a46-72f6-73ce-8eca-925ad61f0402",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"tours",
+										"01992a46-72f6-73ce-8eca-925ad61f0402"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "show a tour",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/tours/0199aa85-a209-702e-a5f7-d92cc1cbcdc7",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"tours",
+												"0199aa85-a209-702e-a5f7-d92cc1cbcdc7"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 21:57:33 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"0199aa85-a209-702e-a5f7-d92cc1cbcdc7\",\n        \"name\": \"UK Adventure Tour 1\",\n        \"slug\": \"uk-adventure-tour-1\",\n        \"starting_date\": \"2025-11-17\",\n        \"ending_date\": \"2025-11-19\",\n        \"avgRate\": 0,\n        \"price\": \"287.91\",\n        \"number_of_days\": 3,\n        \"number_of_nights\": 2\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "store a tour",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "9|0vcIZgoTkahhIptgMmJFl8hd9dA5ieDz9aOertNvd06889f1",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Paris travel\",\r\n    \"country\":\"France\",\r\n    \"description\":\"this gonna be a great travel\",\r\n    \"number_of_days\":15,\r\n    \"is_public\":true\r\n\r\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/travels/01992a46-7279-725f-92eb-a9ef3a3388cf/tours",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"travels",
+										"01992a46-7279-725f-92eb-a9ef3a3388cf",
+										"tours"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "store a tour",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Uk tour 44\",\r\n    \"starting_date\": \"2025-7-6\",\r\n    \"ending_date\": \"2025-7-15\",\r\n    \"price\": 200\r\n}"
+										},
+										"url": {
+											"raw": "{{base_url}}/admin/travels/0199aa85-a18e-710d-b18d-d9ad01eaa476/tours",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"travels",
+												"0199aa85-a18e-710d-b18d-d9ad01eaa476",
+												"tours"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 21:58:30 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"0199ac15-7125-729d-9330-fb63fdb71111\",\n        \"name\": \"Uk tour 44\",\n        \"slug\": \"uk-tour-44\",\n        \"starting_date\": \"2025-7-6\",\n        \"ending_date\": \"2025-7-15\",\n        \"avgRate\": 0,\n        \"price\": \"200.00\",\n        \"number_of_days\": 10,\n        \"number_of_nights\": 9\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "delete a tour",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "12|IbKBU9so2a3HemGB2HbEzccqIssKDM4wZhnBfk2C52a72edc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/tours/01992a46-72f6-73ce-8eca-925ad61f0402",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"tours",
+										"01992a46-72f6-73ce-8eca-925ad61f0402"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete a tour",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/tours/0199aa85-a21d-72a7-a3af-910d0d21c549",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"tours",
+												"0199aa85-a21d-72a7-a3af-910d0d21c549"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 21:59:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Tour removed successfully.\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Booking",
+					"item": [
+						{
+							"name": "index bookings",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "15|4Njc08oogU0B5XupiZ4y0c985X43ZgdZ0MVvUecXca1b171b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/bookings",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"bookings"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "index bookings",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/bookings",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"bookings"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 22:02:54 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"33ebb528-b59f-4daa-bc08-ee0d021ec9c2\",\n            \"user\": {\n                \"id\": \"0199aa85-a143-7226-a548-726914685728\",\n                \"name\": \"Customer User1\",\n                \"email\": \"customer1@example.com\"\n            },\n            \"status\": \"canceled\",\n            \"travel\": {\n                \"id\": \"0199aa85-a195-7172-aa85-3ffd0ed750ac\",\n                \"name\": \"Paris Getaway\",\n                \"slug\": \"paris-getaway\",\n                \"country\": \"France\",\n                \"is_public\": 1,\n                \"description\": \"Romantic escape in Paris\"\n            },\n            \"tour\": {\n                \"id\": \"0199aa85-a22f-7216-9bd7-4c72d93d3da7\",\n                \"name\": \"Paris Getaway Tour 2\",\n                \"slug\": \"paris-getaway-tour-2\",\n                \"starting_date\": \"2025-11-28\",\n                \"ending_date\": \"2025-12-03\",\n                \"avgRate\": 2,\n                \"price\": \"221.14\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"id\": \"3b39e82d-e128-46ff-b984-f018f904e14e\",\n            \"user\": {\n                \"id\": \"0199aa85-9fd7-72c1-a3ea-6d9b24954726\",\n                \"name\": \"Customer User\",\n                \"email\": \"customer@example.com\"\n            },\n            \"status\": \"canceled\",\n            \"travel\": {\n                \"id\": \"0199aa85-a1a9-7218-afd9-17992d4699ac\",\n                \"name\": \"New York Buzz\",\n                \"slug\": \"new-york-buzz\",\n                \"country\": \"USA\",\n                \"is_public\": 1,\n                \"description\": \"Feel the energy of NYC\"\n            },\n            \"tour\": {\n                \"id\": \"0199aa85-a25b-7346-b6ac-2824cee7df68\",\n                \"name\": \"New York Buzz Tour 1\",\n                \"slug\": \"new-york-buzz-tour-1\",\n                \"starting_date\": \"2025-10-26\",\n                \"ending_date\": \"2025-10-31\",\n                \"avgRate\": 3,\n                \"price\": \"308.09\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"id\": \"3cae72ed-9d22-4209-95de-026bda0f56fa\",\n            \"user\": {\n                \"id\": \"0199aa85-9fd7-72c1-a3ea-6d9b24954726\",\n                \"name\": \"Customer User\",\n                \"email\": \"customer@example.com\"\n            },\n            \"status\": \"confirmed\",\n            \"travel\": {\n                \"id\": \"0199aa85-a195-7172-aa85-3ffd0ed750ac\",\n                \"name\": \"Paris Getaway\",\n                \"slug\": \"paris-getaway\",\n                \"country\": \"France\",\n                \"is_public\": 1,\n                \"description\": \"Romantic escape in Paris\"\n            },\n            \"tour\": {\n                \"id\": \"0199aa85-a22f-7216-9bd7-4c72d93d3da7\",\n                \"name\": \"Paris Getaway Tour 2\",\n                \"slug\": \"paris-getaway-tour-2\",\n                \"starting_date\": \"2025-11-28\",\n                \"ending_date\": \"2025-12-03\",\n                \"avgRate\": 2,\n                \"price\": \"221.14\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"id\": \"5ae8a445-2a5c-474b-85f4-102dab766cdc\",\n            \"user\": {\n                \"id\": \"0199aa85-a143-7226-a548-726914685728\",\n                \"name\": \"Customer User1\",\n                \"email\": \"customer1@example.com\"\n            },\n            \"status\": \"confirmed\",\n            \"travel\": {\n                \"id\": \"0199aa85-a195-7172-aa85-3ffd0ed750ac\",\n                \"name\": \"Paris Getaway\",\n                \"slug\": \"paris-getaway\",\n                \"country\": \"France\",\n                \"is_public\": 1,\n                \"description\": \"Romantic escape in Paris\"\n            },\n            \"tour\": {\n                \"id\": \"0199aa85-a238-710e-9070-96d239223fed\",\n                \"name\": \"Paris Getaway Tour 3\",\n                \"slug\": \"paris-getaway-tour-3\",\n                \"starting_date\": \"2025-10-21\",\n                \"ending_date\": \"2025-10-24\",\n                \"avgRate\": 0,\n                \"price\": \"290.23\",\n                \"number_of_days\": 4,\n                \"number_of_nights\": 3\n            }\n        },\n        {\n            \"id\": \"80f22440-c089-41b3-851c-36405efc96b6\",\n            \"user\": {\n                \"id\": \"0199aa85-9fd7-72c1-a3ea-6d9b24954726\",\n                \"name\": \"Customer User\",\n                \"email\": \"customer@example.com\"\n            },\n            \"status\": \"canceled\",\n            \"travel\": {\n                \"id\": \"0199aa85-a1b6-73fe-a37a-03e47f461b03\",\n                \"name\": \"Swiss Alps\",\n                \"slug\": \"swiss-alps\",\n                \"country\": \"Switzerland\",\n                \"is_public\": 1,\n                \"description\": \"Skiing in Switzerland\"\n            },\n            \"tour\": {\n                \"id\": \"0199aa85-a295-73c6-93e2-8e7d1bcbae49\",\n                \"name\": \"Swiss Alps Tour 2\",\n                \"slug\": \"swiss-alps-tour-2\",\n                \"starting_date\": \"2025-12-01\",\n                \"ending_date\": \"2025-12-03\",\n                \"avgRate\": 0,\n                \"price\": \"232.52\",\n                \"number_of_days\": 3,\n                \"number_of_nights\": 2\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "bookings by a travel",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "15|4Njc08oogU0B5XupiZ4y0c985X43ZgdZ0MVvUecXca1b171b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/travels/01992a46-727d-72f4-a227-7c5c121e7ecf/customers",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"travels",
+										"01992a46-727d-72f4-a227-7c5c121e7ecf",
+										"customers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "bookings by a travel",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/travels/0199aa85-a195-7172-aa85-3ffd0ed750ac/customers",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"travels",
+												"0199aa85-a195-7172-aa85-3ffd0ed750ac",
+												"customers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 22:04:02 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"33ebb528-b59f-4daa-bc08-ee0d021ec9c2\",\n            \"user\": {\n                \"id\": \"0199aa85-a143-7226-a548-726914685728\",\n                \"name\": \"Customer User1\",\n                \"email\": \"customer1@example.com\"\n            },\n            \"status\": \"canceled\",\n            \"travel\": {\n                \"id\": \"0199aa85-a195-7172-aa85-3ffd0ed750ac\",\n                \"name\": \"Paris Getaway\",\n                \"slug\": \"paris-getaway\",\n                \"country\": \"France\",\n                \"is_public\": 1,\n                \"description\": \"Romantic escape in Paris\"\n            },\n            \"tour\": {\n                \"id\": \"0199aa85-a22f-7216-9bd7-4c72d93d3da7\",\n                \"name\": \"Paris Getaway Tour 2\",\n                \"slug\": \"paris-getaway-tour-2\",\n                \"starting_date\": \"2025-11-28\",\n                \"ending_date\": \"2025-12-03\",\n                \"avgRate\": 2,\n                \"price\": \"221.14\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"id\": \"3cae72ed-9d22-4209-95de-026bda0f56fa\",\n            \"user\": {\n                \"id\": \"0199aa85-9fd7-72c1-a3ea-6d9b24954726\",\n                \"name\": \"Customer User\",\n                \"email\": \"customer@example.com\"\n            },\n            \"status\": \"confirmed\",\n            \"travel\": {\n                \"id\": \"0199aa85-a195-7172-aa85-3ffd0ed750ac\",\n                \"name\": \"Paris Getaway\",\n                \"slug\": \"paris-getaway\",\n                \"country\": \"France\",\n                \"is_public\": 1,\n                \"description\": \"Romantic escape in Paris\"\n            },\n            \"tour\": {\n                \"id\": \"0199aa85-a22f-7216-9bd7-4c72d93d3da7\",\n                \"name\": \"Paris Getaway Tour 2\",\n                \"slug\": \"paris-getaway-tour-2\",\n                \"starting_date\": \"2025-11-28\",\n                \"ending_date\": \"2025-12-03\",\n                \"avgRate\": 2,\n                \"price\": \"221.14\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"id\": \"5ae8a445-2a5c-474b-85f4-102dab766cdc\",\n            \"user\": {\n                \"id\": \"0199aa85-a143-7226-a548-726914685728\",\n                \"name\": \"Customer User1\",\n                \"email\": \"customer1@example.com\"\n            },\n            \"status\": \"confirmed\",\n            \"travel\": {\n                \"id\": \"0199aa85-a195-7172-aa85-3ffd0ed750ac\",\n                \"name\": \"Paris Getaway\",\n                \"slug\": \"paris-getaway\",\n                \"country\": \"France\",\n                \"is_public\": 1,\n                \"description\": \"Romantic escape in Paris\"\n            },\n            \"tour\": {\n                \"id\": \"0199aa85-a238-710e-9070-96d239223fed\",\n                \"name\": \"Paris Getaway Tour 3\",\n                \"slug\": \"paris-getaway-tour-3\",\n                \"starting_date\": \"2025-10-21\",\n                \"ending_date\": \"2025-10-24\",\n                \"avgRate\": 0,\n                \"price\": \"290.23\",\n                \"number_of_days\": 4,\n                \"number_of_nights\": 3\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "bookings by a tour",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "15|4Njc08oogU0B5XupiZ4y0c985X43ZgdZ0MVvUecXca1b171b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/tours/01992a46-730b-7107-a1ed-e001adb9e8f9/customers",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"tours",
+										"01992a46-730b-7107-a1ed-e001adb9e8f9",
+										"customers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "bookings by a tour",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/tours/0199aa85-a22f-7216-9bd7-4c72d93d3da7/customers",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"tours",
+												"0199aa85-a22f-7216-9bd7-4c72d93d3da7",
+												"customers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 22:06:02 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"33ebb528-b59f-4daa-bc08-ee0d021ec9c2\",\n            \"user\": {\n                \"id\": \"0199aa85-a143-7226-a548-726914685728\",\n                \"name\": \"Customer User1\",\n                \"email\": \"customer1@example.com\"\n            },\n            \"status\": \"canceled\",\n            \"travel\": {\n                \"id\": \"0199aa85-a195-7172-aa85-3ffd0ed750ac\",\n                \"name\": \"Paris Getaway\",\n                \"slug\": \"paris-getaway\",\n                \"country\": \"France\",\n                \"is_public\": 1,\n                \"description\": \"Romantic escape in Paris\"\n            },\n            \"tour\": {\n                \"id\": \"0199aa85-a22f-7216-9bd7-4c72d93d3da7\",\n                \"name\": \"Paris Getaway Tour 2\",\n                \"slug\": \"paris-getaway-tour-2\",\n                \"starting_date\": \"2025-11-28\",\n                \"ending_date\": \"2025-12-03\",\n                \"avgRate\": 2,\n                \"price\": \"221.14\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"id\": \"3cae72ed-9d22-4209-95de-026bda0f56fa\",\n            \"user\": {\n                \"id\": \"0199aa85-9fd7-72c1-a3ea-6d9b24954726\",\n                \"name\": \"Customer User\",\n                \"email\": \"customer@example.com\"\n            },\n            \"status\": \"confirmed\",\n            \"travel\": {\n                \"id\": \"0199aa85-a195-7172-aa85-3ffd0ed750ac\",\n                \"name\": \"Paris Getaway\",\n                \"slug\": \"paris-getaway\",\n                \"country\": \"France\",\n                \"is_public\": 1,\n                \"description\": \"Romantic escape in Paris\"\n            },\n            \"tour\": {\n                \"id\": \"0199aa85-a22f-7216-9bd7-4c72d93d3da7\",\n                \"name\": \"Paris Getaway Tour 2\",\n                \"slug\": \"paris-getaway-tour-2\",\n                \"starting_date\": \"2025-11-28\",\n                \"ending_date\": \"2025-12-03\",\n                \"avgRate\": 2,\n                \"price\": \"221.14\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "confirm a booking",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "15|4Njc08oogU0B5XupiZ4y0c985X43ZgdZ0MVvUecXca1b171b",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/bookings/393db9bb-65b7-458b-8a2c-b4728561042c",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"bookings",
+										"393db9bb-65b7-458b-8a2c-b4728561042c"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "confirm a booking",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/bookings/763e1117-cfa4-4b1f-a3da-48b4e15001d7",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"bookings",
+												"763e1117-cfa4-4b1f-a3da-48b4e15001d7"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 22:08:30 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Booking confirmed successfully and email sent!\",\n    \"booking\": {\n        \"id\": \"763e1117-cfa4-4b1f-a3da-48b4e15001d7\",\n        \"user\": {\n            \"id\": \"0199aa85-a143-7226-a548-726914685728\",\n            \"name\": \"Customer User1\",\n            \"email\": \"customer1@example.com\"\n        },\n        \"status\": \"confirmed\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Refund",
+					"item": [
+						{
+							"name": "display all the refunds",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|HGZBdW8Ya6Fqws16LVlNkrjcwB8o2KBFKNSKehdi91d32838",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\":\"rejected\",\r\n    \"rejection_reason\":\"your reason is not convincing\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/refunds",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"refunds"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "display all the refunds",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/refunds",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"refunds"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 22:09:35 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"12d76cf5-c971-4491-9c17-6caa6d017637\",\n            \"booking\": {\n                \"id\": \"3b39e82d-e128-46ff-b984-f018f904e14e\",\n                \"status\": \"canceled\"\n            },\n            \"user\": {\n                \"id\": \"0199aa85-9fd7-72c1-a3ea-6d9b24954726\",\n                \"name\": \"Customer User\",\n                \"email\": \"customer@example.com\"\n            },\n            \"refund_amount\": \"308.09\",\n            \"status\": \"pending\",\n            \"refund_reason\": \"payment_issue\",\n            \"rejection_reason\": null,\n            \"refunded_at\": null\n        },\n        {\n            \"id\": \"ac20e913-520e-4531-9465-f7dc7a32a75a\",\n            \"booking\": {\n                \"id\": \"33ebb528-b59f-4daa-bc08-ee0d021ec9c2\",\n                \"status\": \"canceled\"\n            },\n            \"user\": {\n                \"id\": \"0199aa85-a143-7226-a548-726914685728\",\n                \"name\": \"Customer User1\",\n                \"email\": \"customer1@example.com\"\n            },\n            \"refund_amount\": \"221.14\",\n            \"status\": \"pending\",\n            \"refund_reason\": \"provider_cancellation\",\n            \"rejection_reason\": null,\n            \"refunded_at\": null\n        },\n        {\n            \"id\": \"e2b21af1-83e6-4716-be44-b0d933631862\",\n            \"booking\": {\n                \"id\": \"80f22440-c089-41b3-851c-36405efc96b6\",\n                \"status\": \"canceled\"\n            },\n            \"user\": {\n                \"id\": \"0199aa85-9fd7-72c1-a3ea-6d9b24954726\",\n                \"name\": \"Customer User\",\n                \"email\": \"customer@example.com\"\n            },\n            \"refund_amount\": \"232.52\",\n            \"status\": \"pending\",\n            \"refund_reason\": \"visa_problem\",\n            \"rejection_reason\": null,\n            \"refunded_at\": null\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "show a refund",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|HGZBdW8Ya6Fqws16LVlNkrjcwB8o2KBFKNSKehdi91d32838",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\":\"rejected\",\r\n    \"rejection_reason\":\"your reason is not convincing\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/refunds/57052f5e-c151-4058-a280-efa4bb98c5db",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"refunds",
+										"57052f5e-c151-4058-a280-efa4bb98c5db"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "show a refund",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/refunds/12d76cf5-c971-4491-9c17-6caa6d017637",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"refunds",
+												"12d76cf5-c971-4491-9c17-6caa6d017637"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 22:11:08 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"12d76cf5-c971-4491-9c17-6caa6d017637\",\n        \"booking\": {\n            \"id\": \"3b39e82d-e128-46ff-b984-f018f904e14e\",\n            \"status\": \"canceled\"\n        },\n        \"user\": {\n            \"id\": \"0199aa85-9fd7-72c1-a3ea-6d9b24954726\",\n            \"name\": \"Customer User\",\n            \"email\": \"customer@example.com\"\n        },\n        \"refund_amount\": \"308.09\",\n        \"status\": \"pending\",\n        \"refund_reason\": \"payment_issue\",\n        \"rejection_reason\": null,\n        \"refunded_at\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "evaluate the refund from the admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|HGZBdW8Ya6Fqws16LVlNkrjcwB8o2KBFKNSKehdi91d32838",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\":\"rejected\",\r\n    \"rejection_reason\":\"your reason is not convincing\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/refunds/ce09e138-9e65-4e02-8247-9d8da504110b",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"refunds",
+										"ce09e138-9e65-4e02-8247-9d8da504110b"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "see the refund from the admin",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"status\":\"rejected\",\r\n    \"rejection_reason\":\"That’s not a convincing reason\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/admin/refunds/12d76cf5-c971-4491-9c17-6caa6d017637",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"refunds",
+												"12d76cf5-c971-4491-9c17-6caa6d017637"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 22:14:50 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"12d76cf5-c971-4491-9c17-6caa6d017637\",\n        \"user\": {\n            \"id\": \"0199aa85-9fd7-72c1-a3ea-6d9b24954726\",\n            \"name\": \"Customer User\",\n            \"email\": \"customer@example.com\"\n        },\n        \"refund_amount\": \"308.09\",\n        \"status\": \"rejected\",\n        \"refund_reason\": \"payment_issue\",\n        \"rejection_reason\": \"That’s not a convincing reason\",\n        \"refunded_at\": null\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Analytics",
+					"item": [
+						{
+							"name": "top countries",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|HGZBdW8Ya6Fqws16LVlNkrjcwB8o2KBFKNSKehdi91d32838",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/analytics/top-countries",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"analytics",
+										"top-countries"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "top countries",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/analytics/top-countries",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"analytics",
+												"top-countries"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 23:00:01 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"country\": \"USA\",\n        \"revenue\": \"424.54\",\n        \"number_of_visitors\": 2,\n        \"average_tour_price\": \"212.27\",\n        \"total_tours\": 2\n    },\n    {\n        \"country\": \"France\",\n        \"revenue\": \"300.11\",\n        \"number_of_visitors\": 1,\n        \"average_tour_price\": \"150.06\",\n        \"total_tours\": 2\n    },\n    {\n        \"country\": \"Egypt\",\n        \"revenue\": \"235.02\",\n        \"number_of_visitors\": 1,\n        \"average_tour_price\": \"235.02\",\n        \"total_tours\": 1\n    },\n    {\n        \"country\": \"UAE\",\n        \"revenue\": \"111.99\",\n        \"number_of_visitors\": 1,\n        \"average_tour_price\": \"111.99\",\n        \"total_tours\": 1\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "top customers",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|HGZBdW8Ya6Fqws16LVlNkrjcwB8o2KBFKNSKehdi91d32838",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/analytics/top-customers",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"analytics",
+										"top-customers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "top customers",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/analytics/top-customers",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"analytics",
+												"top-customers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 23:03:05 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"spend\": \"961.30\",\n        \"user\": {\n            \"id\": \"0199ac4c-9a65-7359-94d7-80fdcafba475\",\n            \"name\": \"Customer User\",\n            \"email\": \"customer@example.com\"\n        }\n    },\n    {\n        \"spend\": \"110.36\",\n        \"user\": {\n            \"id\": \"0199ac4c-9b70-71aa-bdb1-325e2af123e4\",\n            \"name\": \"Customer User1\",\n            \"email\": \"customer1@example.com\"\n        }\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "refund reasons",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|HGZBdW8Ya6Fqws16LVlNkrjcwB8o2KBFKNSKehdi91d32838",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/analytics/refund-reasons",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"analytics",
+										"refund-reasons"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "refund reasons",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/analytics/refund-reasons",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"analytics",
+												"refund-reasons"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 23:06:01 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"reason\": \"health_issue\",\n        \"count\": 2,\n        \"percentage\": \"40.00\"\n    },\n    {\n        \"reason\": \"visa_problem\",\n        \"count\": 1,\n        \"percentage\": \"20.00\"\n    },\n    {\n        \"reason\": \"booking_error\",\n        \"count\": 1,\n        \"percentage\": \"20.00\"\n    },\n    {\n        \"reason\": \"schedule_conflict\",\n        \"count\": 1,\n        \"percentage\": \"20.00\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "sales summary",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|HGZBdW8Ya6Fqws16LVlNkrjcwB8o2KBFKNSKehdi91d32838",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/analytics/sales-summary",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"analytics",
+										"sales-summary"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "sales summary",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/analytics/sales-summary",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"analytics",
+												"sales-summary"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 23:06:22 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"today\": \"1,071.66\",\n    \"week\": \"1,071.66\",\n    \"month\": \"1,071.66\",\n    \"six_months\": \"1,071.66\",\n    \"year\": \"1,071.66\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Dashboard Overview",
+					"item": [
+						{
+							"name": "dashboard overview",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|BJRP0YCBHZuotczDLa3YmVEEhQMS7gmXzhlECZPI4fda5d26",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/admin/dashboard/overview",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"dashboard",
+										"overview"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "dashboard overview",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/admin/dashboard/overview",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"admin",
+												"dashboard",
+												"overview"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Oct 2025 23:11:41 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"sales_vs_refunds\": {\n        \"sales\": \"1,071.66\",\n        \"refunds\": \"1,412.94\",\n        \"net\": \"-341.28\"\n    },\n    \"booking_metrics\": {\n        \"total_bookings\": 6,\n        \"total_ratings\": 4,\n        \"total_reviews\": 1\n    },\n    \"booking_status\": {\n        \"confirmed\": 6,\n        \"pending\": 3,\n        \"canceled\": 9\n    },\n    \"top_rated_tours\": [\n        {\n            \"date_range\": \"Oct 16 – Oct 21, 2025\",\n            \"tour\": {\n                \"id\": \"0199ac4c-9bf0-7359-919c-264335e85483\",\n                \"name\": \"UK Adventure Tour 1\",\n                \"slug\": \"uk-adventure-tour-1\",\n                \"starting_date\": \"2025-10-16\",\n                \"ending_date\": \"2025-10-21\",\n                \"avgRate\": 0,\n                \"price\": \"145.15\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"date_range\": \"Nov 23 – Nov 28, 2025\",\n            \"tour\": {\n                \"id\": \"0199ac4c-9bf6-71a5-9f68-5df89fac3dad\",\n                \"name\": \"UK Adventure Tour 2\",\n                \"slug\": \"uk-adventure-tour-2\",\n                \"starting_date\": \"2025-11-23\",\n                \"ending_date\": \"2025-11-28\",\n                \"avgRate\": 0,\n                \"price\": \"129.72\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"date_range\": \"Nov 16 – Nov 18, 2025\",\n            \"tour\": {\n                \"id\": \"0199ac4c-9c01-70b3-8224-4576d48361d9\",\n                \"name\": \"UK Adventure Tour 3\",\n                \"slug\": \"uk-adventure-tour-3\",\n                \"starting_date\": \"2025-11-16\",\n                \"ending_date\": \"2025-11-18\",\n                \"avgRate\": 0,\n                \"price\": \"343.70\",\n                \"number_of_days\": 3,\n                \"number_of_nights\": 2\n            }\n        },\n        {\n            \"date_range\": \"Nov 29 – Dec 04, 2025\",\n            \"tour\": {\n                \"id\": \"0199ac4c-9c07-7169-aabd-f669e7d54d43\",\n                \"name\": \"Paris Getaway Tour 1\",\n                \"slug\": \"paris-getaway-tour-1\",\n                \"starting_date\": \"2025-11-29\",\n                \"ending_date\": \"2025-12-04\",\n                \"avgRate\": 0,\n                \"price\": \"152.64\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"date_range\": \"Oct 29 – Oct 31, 2025\",\n            \"tour\": {\n                \"id\": \"0199ac4c-9c0c-7254-9af7-ddef6105dd59\",\n                \"name\": \"Paris Getaway Tour 2\",\n                \"slug\": \"paris-getaway-tour-2\",\n                \"starting_date\": \"2025-10-29\",\n                \"ending_date\": \"2025-10-31\",\n                \"avgRate\": 0,\n                \"price\": \"419.99\",\n                \"number_of_days\": 3,\n                \"number_of_nights\": 2\n            }\n        }\n    ],\n    \"upcoming_tours\": [\n        {\n            \"id\": \"0199ac4c-9c07-7169-aabd-f669e7d54d43\",\n            \"name\": \"Paris Getaway Tour 1\",\n            \"slug\": \"paris-getaway-tour-1\",\n            \"starting_date\": \"2025-11-29\",\n            \"ending_date\": \"2025-12-04\",\n            \"avgRate\": 0,\n            \"price\": \"152.64\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199ac4c-9c83-7028-9a79-24d4af98ee62\",\n            \"name\": \"Hidden Himalayas Tour 3\",\n            \"slug\": \"hidden-himalayas-tour-3\",\n            \"starting_date\": \"2025-11-26\",\n            \"ending_date\": \"2025-11-28\",\n            \"avgRate\": 0,\n            \"price\": \"413.64\",\n            \"number_of_days\": 3,\n            \"number_of_nights\": 2\n        },\n        {\n            \"id\": \"0199ac4c-9c32-73d4-8628-747636c5a00a\",\n            \"name\": \"New York Buzz Tour 3\",\n            \"slug\": \"new-york-buzz-tour-3\",\n            \"starting_date\": \"2025-11-24\",\n            \"ending_date\": \"2025-11-27\",\n            \"avgRate\": 0,\n            \"price\": \"307.93\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199ac4c-9bf6-71a5-9f68-5df89fac3dad\",\n            \"name\": \"UK Adventure Tour 2\",\n            \"slug\": \"uk-adventure-tour-2\",\n            \"starting_date\": \"2025-11-23\",\n            \"ending_date\": \"2025-11-28\",\n            \"avgRate\": 0,\n            \"price\": \"129.72\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199ac4c-9c2d-73d0-bc5a-a56338ea9417\",\n            \"name\": \"New York Buzz Tour 2\",\n            \"slug\": \"new-york-buzz-tour-2\",\n            \"starting_date\": \"2025-11-20\",\n            \"ending_date\": \"2025-11-25\",\n            \"avgRate\": 1,\n            \"price\": \"314.18\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        }\n    ],\n    \"recent_activity\": [\n        {\n            \"type\": \"booking\",\n            \"message\": \"Customer User booked Sydney Shores Tour 2\",\n            \"timestamp\": \"Oct 03, 2025 10:59 PM\"\n        },\n        {\n            \"type\": \"booking\",\n            \"message\": \"Customer User booked Paris Getaway Tour 3\",\n            \"timestamp\": \"Oct 03, 2025 10:59 PM\"\n        },\n        {\n            \"type\": \"booking\",\n            \"message\": \"Customer User1 booked UK Adventure Tour 3\",\n            \"timestamp\": \"Oct 03, 2025 10:59 PM\"\n        },\n        {\n            \"type\": \"booking\",\n            \"message\": \"Customer User1 booked New York Buzz Tour 1\",\n            \"timestamp\": \"Oct 03, 2025 10:59 PM\"\n        },\n        {\n            \"type\": \"booking\",\n            \"message\": \"Customer User1 booked Swiss Alps Tour 1\",\n            \"timestamp\": \"Oct 03, 2025 10:59 PM\"\n        },\n        {\n            \"type\": \"rating\",\n            \"message\": \"Customer User rated New York Buzz Tour 2 1.00 stars\",\n            \"timestamp\": \"Oct 03, 2025 10:58 PM\"\n        },\n        {\n            \"type\": \"rating\",\n            \"message\": \"Customer User1 rated Desert Safari Tour 2 2.00 stars\",\n            \"timestamp\": \"Oct 03, 2025 10:58 PM\"\n        },\n        {\n            \"type\": \"rating\",\n            \"message\": \"Customer User rated Tokyo Lights Tour 2 4.00 stars\",\n            \"timestamp\": \"Oct 03, 2025 10:58 PM\"\n        },\n        {\n            \"type\": \"rating\",\n            \"message\": \"Customer User1 rated Secret Amazon Tour 3 3.00 stars\",\n            \"timestamp\": \"Oct 03, 2025 10:58 PM\"\n        },\n        {\n            \"type\": \"reviewing\",\n            \"message\": \"Customer User reviewed Tokyo Lights Tour 2 saying: \\\"Great experience!\\\" \",\n            \"timestamp\": \"Oct 03, 2025 10:58 PM\"\n        },\n        {\n            \"type\": \"refund\",\n            \"message\": \"Customer User requested a refund for New York Buzz Tour 2\",\n            \"timestamp\": \"Oct 03, 2025 10:58 PM\"\n        },\n        {\n            \"type\": \"refund\",\n            \"message\": \"Customer User1 requested a refund for Swiss Alps Tour 1\",\n            \"timestamp\": \"Oct 03, 2025 10:58 PM\"\n        },\n        {\n            \"type\": \"refund\",\n            \"message\": \"Customer User1 requested a refund for New York Buzz Tour 2\",\n            \"timestamp\": \"Oct 03, 2025 10:58 PM\"\n        },\n        {\n            \"type\": \"refund\",\n            \"message\": \"Customer User1 requested a refund for Tokyo Lights Tour 1\",\n            \"timestamp\": \"Oct 03, 2025 10:58 PM\"\n        },\n        {\n            \"type\": \"refund\",\n            \"message\": \"Customer User requested a refund for Cairo Mysteries Tour 2\",\n            \"timestamp\": \"Oct 03, 2025 10:58 PM\"\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Guest",
+			"item": [
+				{
+					"name": "display all travels",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/travels",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"travels"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "display all travels",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/travels",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"travels"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 Oct 2025 21:29:58 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"0199ac4c-9b85-72f1-bbdc-4288a08a32db\",\n            \"name\": \"UK Adventure\",\n            \"slug\": \"uk-adventure\",\n            \"country\": \"UK\",\n            \"is_public\": 1,\n            \"description\": \"Explore the UK countryside\"\n        },\n        {\n            \"id\": \"0199ac4c-9b89-71a1-a886-3a84ae29a138\",\n            \"name\": \"Paris Getaway\",\n            \"slug\": \"paris-getaway\",\n            \"country\": \"France\",\n            \"is_public\": 1,\n            \"description\": \"Romantic escape in Paris\"\n        },\n        {\n            \"id\": \"0199ac4c-9b93-721a-8225-f448de7d8900\",\n            \"name\": \"Tokyo Lights\",\n            \"slug\": \"tokyo-lights\",\n            \"country\": \"Japan\",\n            \"is_public\": 1,\n            \"description\": \"Experience Tokyo nightlife\"\n        },\n        {\n            \"id\": \"0199ac4c-9b97-7184-aab4-01f014625326\",\n            \"name\": \"New York Buzz\",\n            \"slug\": \"new-york-buzz\",\n            \"country\": \"USA\",\n            \"is_public\": 1,\n            \"description\": \"Feel the energy of NYC\"\n        },\n        {\n            \"id\": \"0199ac4c-9b9c-72bb-88ba-87b7487ced68\",\n            \"name\": \"Desert Safari\",\n            \"slug\": \"desert-safari\",\n            \"country\": \"UAE\",\n            \"is_public\": 1,\n            \"description\": \"Thrilling ride in Dubai\"\n        },\n        {\n            \"id\": \"0199ac4c-9ba1-7310-ab32-6454d14a9e8a\",\n            \"name\": \"Swiss Alps\",\n            \"slug\": \"swiss-alps\",\n            \"country\": \"Switzerland\",\n            \"is_public\": 1,\n            \"description\": \"Skiing in Switzerland\"\n        },\n        {\n            \"id\": \"0199ac4c-9ba5-7168-af4e-49cafe8a7c4a\",\n            \"name\": \"Cairo Mysteries\",\n            \"slug\": \"cairo-mysteries\",\n            \"country\": \"Egypt\",\n            \"is_public\": 1,\n            \"description\": \"Discover ancient Egypt\"\n        },\n        {\n            \"id\": \"0199ac4c-9baa-7091-a342-61729dfa4d1e\",\n            \"name\": \"Sydney Shores\",\n            \"slug\": \"sydney-shores\",\n            \"country\": \"Australia\",\n            \"is_public\": 1,\n            \"description\": \"Beach vibes in Australia\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "show a travel",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/travels/uk-adventure",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"travels",
+								"uk-adventure"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show a travel",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/travels/uk-adventure",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"travels",
+										"uk-adventure"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 Oct 2025 21:30:55 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"0199ac4c-9b85-72f1-bbdc-4288a08a32db\",\n        \"name\": \"UK Adventure\",\n        \"slug\": \"uk-adventure\",\n        \"country\": \"UK\",\n        \"is_public\": 1,\n        \"description\": \"Explore the UK countryside\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "display filtered tours",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"priceFrom\":200,\r\n    \"priceTo\":400\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/tours",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"tours"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "display filtered tours",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"priceFrom\":200,\r\n    \"priceTo\":400\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/tours",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"tours"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 Oct 2025 21:44:52 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"0199ac4c-9c32-73d4-8628-747636c5a00a\",\n            \"name\": \"New York Buzz Tour 3\",\n            \"slug\": \"new-york-buzz-tour-3\",\n            \"starting_date\": \"2025-11-24\",\n            \"ending_date\": \"2025-11-27\",\n            \"avgRate\": 0,\n            \"price\": \"307.93\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199ac4c-9c2d-73d0-bc5a-a56338ea9417\",\n            \"name\": \"New York Buzz Tour 2\",\n            \"slug\": \"new-york-buzz-tour-2\",\n            \"starting_date\": \"2025-11-20\",\n            \"ending_date\": \"2025-11-25\",\n            \"avgRate\": 1,\n            \"price\": \"314.18\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199ac4c-9c22-7234-a753-1100c8c1c14b\",\n            \"name\": \"Tokyo Lights Tour 3\",\n            \"slug\": \"tokyo-lights-tour-3\",\n            \"starting_date\": \"2025-11-17\",\n            \"ending_date\": \"2025-11-20\",\n            \"avgRate\": 0,\n            \"price\": \"266.01\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199ac4c-9c01-70b3-8224-4576d48361d9\",\n            \"name\": \"UK Adventure Tour 3\",\n            \"slug\": \"uk-adventure-tour-3\",\n            \"starting_date\": \"2025-11-16\",\n            \"ending_date\": \"2025-11-18\",\n            \"avgRate\": 0,\n            \"price\": \"343.70\",\n            \"number_of_days\": 3,\n            \"number_of_nights\": 2\n        },\n        {\n            \"id\": \"0199ac4c-9c6e-700a-936a-279bc2be4e14\",\n            \"name\": \"Sydney Shores Tour 2\",\n            \"slug\": \"sydney-shores-tour-2\",\n            \"starting_date\": \"2025-11-14\",\n            \"ending_date\": \"2025-11-19\",\n            \"avgRate\": 0,\n            \"price\": \"286.61\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199ac4c-9c73-72f2-b031-da6bf0e25db1\",\n            \"name\": \"Sydney Shores Tour 3\",\n            \"slug\": \"sydney-shores-tour-3\",\n            \"starting_date\": \"2025-11-10\",\n            \"ending_date\": \"2025-11-14\",\n            \"avgRate\": 0,\n            \"price\": \"227.85\",\n            \"number_of_days\": 5,\n            \"number_of_nights\": 4\n        },\n        {\n            \"id\": \"0199ac4c-9c38-70c4-bf09-bbbd48f09024\",\n            \"name\": \"Desert Safari Tour 1\",\n            \"slug\": \"desert-safari-tour-1\",\n            \"starting_date\": \"2025-11-08\",\n            \"ending_date\": \"2025-11-12\",\n            \"avgRate\": 0,\n            \"price\": \"288.13\",\n            \"number_of_days\": 5,\n            \"number_of_nights\": 4\n        },\n        {\n            \"id\": \"0199ac4c-9c58-7329-acc4-643e5f7d6c2a\",\n            \"name\": \"Cairo Mysteries Tour 1\",\n            \"slug\": \"cairo-mysteries-tour-1\",\n            \"starting_date\": \"2025-11-08\",\n            \"ending_date\": \"2025-11-12\",\n            \"avgRate\": 0,\n            \"price\": \"292.15\",\n            \"number_of_days\": 5,\n            \"number_of_nights\": 4\n        },\n        {\n            \"id\": \"0199ac4c-9c17-71e0-979b-e4666bdac9ec\",\n            \"name\": \"Tokyo Lights Tour 1\",\n            \"slug\": \"tokyo-lights-tour-1\",\n            \"starting_date\": \"2025-11-06\",\n            \"ending_date\": \"2025-11-11\",\n            \"avgRate\": 0,\n            \"price\": \"398.92\",\n            \"number_of_days\": 6,\n            \"number_of_nights\": 5\n        },\n        {\n            \"id\": \"0199ac4c-9c5d-7170-8d56-ca9fe2682514\",\n            \"name\": \"Cairo Mysteries Tour 2\",\n            \"slug\": \"cairo-mysteries-tour-2\",\n            \"starting_date\": \"2025-10-30\",\n            \"ending_date\": \"2025-11-02\",\n            \"avgRate\": 0,\n            \"price\": \"235.02\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        },\n        {\n            \"id\": \"0199ac4c-9c78-7328-9bda-0315cde8a047\",\n            \"name\": \"Hidden Himalayas Tour 1\",\n            \"slug\": \"hidden-himalayas-tour-1\",\n            \"starting_date\": \"2025-10-18\",\n            \"ending_date\": \"2025-10-21\",\n            \"avgRate\": 0,\n            \"price\": \"303.73\",\n            \"number_of_days\": 4,\n            \"number_of_nights\": 3\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "show a tour",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"priceFrom\":200,\r\n    \"priceTo\":400\r\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/tours/sydney-shores-tour-2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"tours",
+								"sydney-shores-tour-2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show a tour",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"priceFrom\":200,\r\n    \"priceTo\":400\r\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/tours/sydney-shores-tour-2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"tours",
+										"sydney-shores-tour-2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 Oct 2025 22:03:14 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": \"0199ac4c-9c6e-700a-936a-279bc2be4e14\",\n        \"name\": \"Sydney Shores Tour 2\",\n        \"slug\": \"sydney-shores-tour-2\",\n        \"starting_date\": \"2025-11-14\",\n        \"ending_date\": \"2025-11-19\",\n        \"avgRate\": 0,\n        \"price\": \"286.61\",\n        \"number_of_days\": 6,\n        \"number_of_nights\": 5\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Booking",
+					"item": [
+						{
+							"name": "display all the booking",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "2|9pWXfcWzFvUckjhHuX6y2YtLOyb4OJ5fetMgUELvc1d248eb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/customer/bookings",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"customer",
+										"bookings"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "display all the booking",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/customer/bookings",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"customer",
+												"bookings"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 05 Oct 2025 22:11:51 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"04289239-b44b-41c1-adcc-90a32586e61d\",\n            \"status\": \"confirmed\",\n            \"travel\": {\n                \"id\": \"0199ac4c-9b89-71a1-a886-3a84ae29a138\",\n                \"name\": \"Paris Getaway\",\n                \"slug\": \"paris-getaway\",\n                \"country\": \"France\",\n                \"is_public\": 1,\n                \"description\": \"Romantic escape in Paris\"\n            },\n            \"tour\": {\n                \"id\": \"0199ac4c-9c12-7194-9713-73391cda6117\",\n                \"name\": \"Paris Getaway Tour 3\",\n                \"slug\": \"paris-getaway-tour-3\",\n                \"starting_date\": \"2025-11-06\",\n                \"ending_date\": \"2025-11-09\",\n                \"avgRate\": 0,\n                \"price\": \"147.47\",\n                \"number_of_days\": 4,\n                \"number_of_nights\": 3\n            }\n        },\n        {\n            \"id\": \"0643604a-c34f-4b6c-870b-fc961d0369fa\",\n            \"status\": \"confirmed\",\n            \"travel\": {\n                \"id\": \"0199ac4c-9ba5-7168-af4e-49cafe8a7c4a\",\n                \"name\": \"Cairo Mysteries\",\n                \"slug\": \"cairo-mysteries\",\n                \"country\": \"Egypt\",\n                \"is_public\": 1,\n                \"description\": \"Discover ancient Egypt\"\n            },\n            \"tour\": {\n                \"id\": \"0199ac4c-9c5d-7170-8d56-ca9fe2682514\",\n                \"name\": \"Cairo Mysteries Tour 2\",\n                \"slug\": \"cairo-mysteries-tour-2\",\n                \"starting_date\": \"2025-10-30\",\n                \"ending_date\": \"2025-11-02\",\n                \"avgRate\": 0,\n                \"price\": \"235.02\",\n                \"number_of_days\": 4,\n                \"number_of_nights\": 3\n            }\n        },\n        {\n            \"id\": \"3c4a2f8c-20e2-4f40-95fb-ed3510d4ad36\",\n            \"status\": \"confirmed\",\n            \"travel\": {\n                \"id\": \"0199ac4c-9b9c-72bb-88ba-87b7487ced68\",\n                \"name\": \"Desert Safari\",\n                \"slug\": \"desert-safari\",\n                \"country\": \"UAE\",\n                \"is_public\": 1,\n                \"description\": \"Thrilling ride in Dubai\"\n            },\n            \"tour\": {\n                \"id\": \"0199ac4c-9c43-706f-b486-1da04aa4d779\",\n                \"name\": \"Desert Safari Tour 3\",\n                \"slug\": \"desert-safari-tour-3\",\n                \"starting_date\": \"2025-10-28\",\n                \"ending_date\": \"2025-10-31\",\n                \"avgRate\": 0,\n                \"price\": \"111.99\",\n                \"number_of_days\": 4,\n                \"number_of_nights\": 3\n            }\n        },\n        {\n            \"id\": \"6ff32d51-9c5c-413b-a522-cd5e2bfda47e\",\n            \"status\": \"confirmed\",\n            \"travel\": {\n                \"id\": \"0199ac4c-9b89-71a1-a886-3a84ae29a138\",\n                \"name\": \"Paris Getaway\",\n                \"slug\": \"paris-getaway\",\n                \"country\": \"France\",\n                \"is_public\": 1,\n                \"description\": \"Romantic escape in Paris\"\n            },\n            \"tour\": {\n                \"id\": \"0199ac4c-9c07-7169-aabd-f669e7d54d43\",\n                \"name\": \"Paris Getaway Tour 1\",\n                \"slug\": \"paris-getaway-tour-1\",\n                \"starting_date\": \"2025-11-29\",\n                \"ending_date\": \"2025-12-04\",\n                \"avgRate\": 0,\n                \"price\": \"152.64\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"id\": \"73f72041-a3b3-42e4-bff9-4be954fa2f2a\",\n            \"status\": \"canceled\",\n            \"travel\": {\n                \"id\": \"0199ac4c-9b97-7184-aab4-01f014625326\",\n                \"name\": \"New York Buzz\",\n                \"slug\": \"new-york-buzz\",\n                \"country\": \"USA\",\n                \"is_public\": 1,\n                \"description\": \"Feel the energy of NYC\"\n            },\n            \"tour\": {\n                \"id\": \"0199ac4c-9c2d-73d0-bc5a-a56338ea9417\",\n                \"name\": \"New York Buzz Tour 2\",\n                \"slug\": \"new-york-buzz-tour-2\",\n                \"starting_date\": \"2025-11-20\",\n                \"ending_date\": \"2025-11-25\",\n                \"avgRate\": 1,\n                \"price\": \"314.18\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"id\": \"a42faab9-6c8a-459f-8e89-428df684de52\",\n            \"status\": \"canceled\",\n            \"travel\": {\n                \"id\": \"0199ac4c-9baa-7091-a342-61729dfa4d1e\",\n                \"name\": \"Sydney Shores\",\n                \"slug\": \"sydney-shores\",\n                \"country\": \"Australia\",\n                \"is_public\": 1,\n                \"description\": \"Beach vibes in Australia\"\n            },\n            \"tour\": {\n                \"id\": \"0199ac4c-9c6e-700a-936a-279bc2be4e14\",\n                \"name\": \"Sydney Shores Tour 2\",\n                \"slug\": \"sydney-shores-tour-2\",\n                \"starting_date\": \"2025-11-14\",\n                \"ending_date\": \"2025-11-19\",\n                \"avgRate\": 0,\n                \"price\": \"286.61\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"id\": \"b4c3c000-6919-4eb7-9ea0-3528524423b3\",\n            \"status\": \"canceled\",\n            \"travel\": {\n                \"id\": \"0199ac4c-9ba5-7168-af4e-49cafe8a7c4a\",\n                \"name\": \"Cairo Mysteries\",\n                \"slug\": \"cairo-mysteries\",\n                \"country\": \"Egypt\",\n                \"is_public\": 1,\n                \"description\": \"Discover ancient Egypt\"\n            },\n            \"tour\": {\n                \"id\": \"0199ac4c-9c5d-7170-8d56-ca9fe2682514\",\n                \"name\": \"Cairo Mysteries Tour 2\",\n                \"slug\": \"cairo-mysteries-tour-2\",\n                \"starting_date\": \"2025-10-30\",\n                \"ending_date\": \"2025-11-02\",\n                \"avgRate\": 0,\n                \"price\": \"235.02\",\n                \"number_of_days\": 4,\n                \"number_of_nights\": 3\n            }\n        },\n        {\n            \"id\": \"eacb1be8-898f-414e-8614-52eb46760540\",\n            \"status\": \"confirmed\",\n            \"travel\": {\n                \"id\": \"0199ac4c-9b97-7184-aab4-01f014625326\",\n                \"name\": \"New York Buzz\",\n                \"slug\": \"new-york-buzz\",\n                \"country\": \"USA\",\n                \"is_public\": 1,\n                \"description\": \"Feel the energy of NYC\"\n            },\n            \"tour\": {\n                \"id\": \"0199ac4c-9c2d-73d0-bc5a-a56338ea9417\",\n                \"name\": \"New York Buzz Tour 2\",\n                \"slug\": \"new-york-buzz-tour-2\",\n                \"starting_date\": \"2025-11-20\",\n                \"ending_date\": \"2025-11-25\",\n                \"avgRate\": 1,\n                \"price\": \"314.18\",\n                \"number_of_days\": 6,\n                \"number_of_nights\": 5\n            }\n        },\n        {\n            \"id\": \"f4799e9e-b625-439f-b0af-e5968670eab8\",\n            \"status\": \"pending\",\n            \"travel\": {\n                \"id\": \"0199ac4c-9b89-71a1-a886-3a84ae29a138\",\n                \"name\": \"Paris Getaway\",\n                \"slug\": \"paris-getaway\",\n                \"country\": \"France\",\n                \"is_public\": 1,\n                \"description\": \"Romantic escape in Paris\"\n            },\n            \"tour\": {\n                \"id\": \"0199ac4c-9c12-7194-9713-73391cda6117\",\n                \"name\": \"Paris Getaway Tour 3\",\n                \"slug\": \"paris-getaway-tour-3\",\n                \"starting_date\": \"2025-11-06\",\n                \"ending_date\": \"2025-11-09\",\n                \"avgRate\": 0,\n                \"price\": \"147.47\",\n                \"number_of_days\": 4,\n                \"number_of_nights\": 3\n            }\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://127.0.0.1:8000/api/v1/customer/bookings?page=1\",\n        \"last\": \"http://127.0.0.1:8000/api/v1/customer/bookings?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/customer/bookings?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://127.0.0.1:8000/api/v1/customer/bookings\",\n        \"per_page\": 15,\n        \"to\": 9,\n        \"total\": 9\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "booking a tour",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "2|9pWXfcWzFvUckjhHuX6y2YtLOyb4OJ5fetMgUELvc1d248eb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/customer/tours/paris-getaway-tour-2/bookings",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"customer",
+										"tours",
+										"paris-getaway-tour-2",
+										"bookings"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "booking a tour",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/customer/tours/paris-getaway-tour-2/bookings",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"customer",
+												"tours",
+												"paris-getaway-tour-2",
+												"bookings"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 05 Oct 2025 22:41:17 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Booking created successfully\"\n}"
+								}
+							]
+						},
+						{
+							"name": "cancel a booking",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "2|9pWXfcWzFvUckjhHuX6y2YtLOyb4OJ5fetMgUELvc1d248eb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/customer/tours/paris-getaway-tour-2/bookings",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"customer",
+										"tours",
+										"paris-getaway-tour-2",
+										"bookings"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "cancel a booking",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/customer/tours/paris-getaway-tour-2/bookings",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"customer",
+												"tours",
+												"paris-getaway-tour-2",
+												"bookings"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 05 Oct 2025 22:43:50 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Booking has been successfully canceled.\",\n    \"data\": {\n        \"id\": \"0199b689-5423-70aa-a1b5-6420a80f8377\",\n        \"status\": \"canceled\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Refund",
+					"item": [
+						{
+							"name": "display all the refunds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "2|9pWXfcWzFvUckjhHuX6y2YtLOyb4OJ5fetMgUELvc1d248eb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/customer/refunds",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"customer",
+										"refunds"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "display all the refunds",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/customer/refunds",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"customer",
+												"refunds"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 05 Oct 2025 22:51:54 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"31c83c07-8f58-4913-be95-dd04011ef6ba\",\n            \"booking\": {\n                \"id\": \"73f72041-a3b3-42e4-bff9-4be954fa2f2a\",\n                \"status\": \"canceled\"\n            },\n            \"user\": {\n                \"id\": \"0199ac4c-9a65-7359-94d7-80fdcafba475\",\n                \"name\": \"Customer User\",\n                \"email\": \"customer@example.com\"\n            },\n            \"refund_amount\": \"314.18\",\n            \"status\": \"pending\",\n            \"refund_reason\": \"visa_problem\",\n            \"rejection_reason\": null,\n            \"refunded_at\": null\n        },\n        {\n            \"id\": \"f2c8afe2-cf23-4b60-b97b-edb404da69e6\",\n            \"booking\": {\n                \"id\": \"b4c3c000-6919-4eb7-9ea0-3528524423b3\",\n                \"status\": \"canceled\"\n            },\n            \"user\": {\n                \"id\": \"0199ac4c-9a65-7359-94d7-80fdcafba475\",\n                \"name\": \"Customer User\",\n                \"email\": \"customer@example.com\"\n            },\n            \"refund_amount\": \"235.02\",\n            \"status\": \"pending\",\n            \"refund_reason\": \"health_issue\",\n            \"rejection_reason\": null,\n            \"refunded_at\": null\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "show a refund",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "2|9pWXfcWzFvUckjhHuX6y2YtLOyb4OJ5fetMgUELvc1d248eb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/customer/refunds/31c83c07-8f58-4913-be95-dd04011ef6ba",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"customer",
+										"refunds",
+										"31c83c07-8f58-4913-be95-dd04011ef6ba"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "show a refund",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{base_url}}/customer/refunds/31c83c07-8f58-4913-be95-dd04011ef6ba",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"customer",
+												"refunds",
+												"31c83c07-8f58-4913-be95-dd04011ef6ba"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 05 Oct 2025 22:55:12 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"31c83c07-8f58-4913-be95-dd04011ef6ba\",\n        \"booking\": {\n            \"id\": \"73f72041-a3b3-42e4-bff9-4be954fa2f2a\",\n            \"status\": \"canceled\"\n        },\n        \"user\": {\n            \"id\": \"0199ac4c-9a65-7359-94d7-80fdcafba475\",\n            \"name\": \"Customer User\",\n            \"email\": \"customer@example.com\"\n        },\n        \"refund_amount\": \"314.18\",\n        \"status\": \"pending\",\n        \"refund_reason\": \"visa_problem\",\n        \"rejection_reason\": null,\n        \"refunded_at\": null\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "refund a cancelled booking",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "2|9pWXfcWzFvUckjhHuX6y2YtLOyb4OJ5fetMgUELvc1d248eb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"refund_reason\": \"visa_problem\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/customer/bookings/a42faab9-6c8a-459f-8e89-428df684de52/refund",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"customer",
+										"bookings",
+										"a42faab9-6c8a-459f-8e89-428df684de52",
+										"refund"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "refund a cancelled booking",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"refund_reason\": \"visa_problem\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/customer/bookings/a42faab9-6c8a-459f-8e89-428df684de52/refund",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"customer",
+												"bookings",
+												"a42faab9-6c8a-459f-8e89-428df684de52",
+												"refund"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 05 Oct 2025 23:04:22 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"0199b69e-7649-71d4-a1fa-8194601523c2\",\n        \"refund_amount\": \"286.61\",\n        \"status\": \"pending\",\n        \"refund_reason\": \"visa_problem\",\n        \"rejection_reason\": null,\n        \"refunded_at\": null\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Rating",
+					"item": [
+						{
+							"name": "rating a tour",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "2|9pWXfcWzFvUckjhHuX6y2YtLOyb4OJ5fetMgUELvc1d248eb",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"rating\": 5\r\n}\r\n"
+								},
+								"url": {
+									"raw": "{{base_url}}/customer/tours/uk-adventure-tour-1/rate",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"customer",
+										"tours",
+										"uk-adventure-tour-1",
+										"rate"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "rating a tour",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"rating\": 5\r\n}\r\n"
+										},
+										"url": {
+											"raw": "{{base_url}}/customer/tours/uk-adventure-tour-1/rate",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"customer",
+												"tours",
+												"uk-adventure-tour-1",
+												"rate"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.2.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 05 Oct 2025 23:08:36 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Your rating has been submitted successfully.\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"steve\",\r\n  \"email\":\"customer3@gmail.com\",\r\n  \"password\":\"password\",\r\n  \"password_confirmation\":\"password\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{base_url}}/signup",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"steve\",\r\n  \"email\":\"customer3@gmail.com\",\r\n  \"password\":\"password\",\r\n  \"password_confirmation\":\"password\"\r\n}\r\n"
+								},
+								"url": {
+									"raw": "{{base_url}}/signup",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Oct 2025 21:37:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"user created successfully\",\n    \"access_token\": \"3|qf2ejkosu6TScfxeZhcP5eXTjWFmze26WlmJitXtec0feecf\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"admin@example.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/login",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Oct 2025 13:56:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"1|0TyGr46p2pi8ucJJ5XrQzxUQiVBs50w8TXypHI8if4ddb625\",\n    \"user\": {\n        \"id\": \"0199aa59-defe-705e-9ebb-42b62ad356d5\",\n        \"name\": \"Admin User\",\n        \"email\": \"admin@example.com\",\n        \"email_verified_at\": null,\n        \"created_at\": \"2025-10-03T13:54:00.000000Z\",\n        \"updated_at\": \"2025-10-03T13:54:00.000000Z\",\n        \"roles\": [\n            {\n                \"id\": \"0199aa59-dd27-702f-aac7-468614311108\",\n                \"name\": \"admin\",\n                \"created_at\": \"2025-10-03T13:54:00.000000Z\",\n                \"updated_at\": \"2025-10-03T13:54:00.000000Z\",\n                \"pivot\": {\n                    \"user_id\": \"0199aa59-defe-705e-9ebb-42b62ad356d5\",\n                    \"role_id\": \"0199aa59-dd27-702f-aac7-468614311108\"\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|9pWXfcWzFvUckjhHuX6y2YtLOyb4OJ5fetMgUELvc1d248eb",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"rating\": 5\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{base_url}}/logout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"rating\": 5\r\n}\r\n"
+								},
+								"url": {
+									"raw": "{{base_url}}/logout",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Oct 2025 21:34:24 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"LogOut Successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
