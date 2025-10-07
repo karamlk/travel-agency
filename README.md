@@ -129,16 +129,17 @@ Login using the default admin credentials from the seeder (see `DatabaseSeeder.p
 # Preview
 
 ### Login Page
-![Login Page](assets/screenshots/login.png)
+![Login Page](./assets/screenshots/login.png)
 
 ### Dashboard Overview
-![Dashboard Overview](assets/screenshots/dashboard.png)
+![Dashboard Overview](./assets/screenshots/dashboard.png)
 
 ### Travels Management
-![Travels Page](assets/screenshots/travels.png)
+![Travels Page](./assets/screenshots/travels.png)
 
 ### Bookings Management
-![Bookings Page](assets/screenshots/bookings.png)
+![Bookings Page](./assets/screenshots/bookings.png)
+
 
 ---
 
