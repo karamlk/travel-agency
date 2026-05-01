@@ -1,84 +1,89 @@
-#  Travel Agency Management System
+# Travel Agency Management System
 
-A full-stack travel agency management system built with **Laravel (API backend)** and **React (admin dashboard)**.  
-This system allows travel agencies to manage travels, tours, and bookings, with authentication and analytics.
+<p align="center">
+  <b>Full-stack travel agency platform — Laravel REST API backend with React admin dashboard</b>
+</p>
 
----
-
-# Features
-
-## Authentication
-- User signup, login, and logout (Laravel Sanctum)  
-- Role-based access control (Admin vs Customer)  
-
-## Admin Dashboard (React)
-- Travel management: create, view, edit, delete travels  
-- Tour management: create, view, edit, delete tours  
-- Booking management: view and confirm customer bookings  
-- Refund management: view, update, and track refunds  
-- Dashboard overview: summary of key metrics  
-- Analytics:  
-  - Top countries  
-  - Top customers  
-  - Refund reasons  
-  - Sales summary  
-- Notifications: real-time alerts using React Toastify  
-- Icons & UI: clean interface using Lucide-react  
-
-## Customer API Features
-- Browse travels and tours (`/travels`, `/tours`)  
-- Book tours and cancel bookings  
-- Request refunds for bookings  
-- Rate tours  
-
-## Email & Notifications
-- Email notifications for bookings, cancellations, and refunds
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-11-red?style=for-the-badge&logo=laravel">
+  <img src="https://img.shields.io/badge/PHP-8%2B-blue?style=for-the-badge&logo=php">
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react">
+  <img src="https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql">
+  <img src="https://img.shields.io/badge/Auth-Sanctum-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge">
+</p>
 
 ---
 
-#  Tech Stack
+## Overview
 
-##  Backend (Laravel)
-- Laravel 11
-- MySQL 
-- Sanctum (for API authentication)
-- Mailtrap for email notifications
-- Eloquent ORM
-
-##  Frontend (React)
-- React 
-- React Router DOM
-- Axios (for API calls)
-- React Toastify (notifications)
-- Lucide-react (icons)
-- TailwindCSS 
+A full-stack travel agency management system built with Laravel (API backend) and React (admin dashboard). Allows travel agencies to manage travels, tours, and bookings with role-based access control, analytics, and email notifications.
 
 ---
 
-# Installation
+## Architecture
 
-## Clone the repository
+**Backend:** RESTful API with role-based access (Admin/Customer) using Laravel Sanctum. UUID-based resource identification for all entities prevents sequential ID enumeration.
+
+**Frontend:** React admin dashboard with Context API state management, axios interceptors for token handling, and protected routes. Real-time toast notifications via React Toastify.
+
+---
+
+## Features
+
+### Admin Dashboard
+- Travel and tour management (create, view, edit, delete)
+- Booking management — view and confirm customer bookings
+- Refund management — view, update, and track refund requests
+- Analytics — top countries, top customers, refund reasons, sales summary
+- Dashboard overview with key metrics
+
+### Customer API
+- Browse travels and tours
+- Book and cancel tours
+- Request refunds
+- Rate tours
+
+### General
+- Role-based access control (Admin vs Customer)
+- Email notifications for bookings, cancellations, and refunds via Mailtrap
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Backend | Laravel 11 |
+| Database | MySQL, Eloquent ORM |
+| Auth | Laravel Sanctum |
+| Email | Mailtrap |
+| Frontend | React, React Router DOM |
+| Styling | TailwindCSS |
+| HTTP | Axios |
+| Notifications | React Toastify |
+| Icons | Lucide-react |
+| API Testing | Postman |
+
+---
+
+## Installation
+
+### 1. Clone
 
 ```bash
 git clone https://github.com/karamlk/travel-agency.git
 cd travel-agency
 ```
 
-## Backend setup (Laravel API)
-
-### 1. Install Dependencies
+### Backend Setup
 
 ```bash
 composer install
-```
-
-### 2. Copy the example environment file 
-
-```bash
 cp .env.example .env
 ```
 
-Then edit `.env` and configure your database:
+Edit `.env` with your database credentials:
 
 ```env
 DB_CONNECTION=mysql
@@ -89,44 +94,27 @@ DB_USERNAME=your_username
 DB_PASSWORD=your_password
 ```
 
-### 3. Generate application key
-
 ```bash
 php artisan key:generate
-```
-
-### 4. Run migrations with seeders:
-
-```bash
 php artisan migrate --seed
-```
-
-### 5. Serve Locally
-
-```bash
 php artisan serve
 ```
 
-## Frontend setup (React Admin Dashboard)
+### Frontend Setup
 
-### 1. Install Dependencies
 ```bash
 npm install
-```
-
-### 2. Run 
-```bash
 npm run dev
 ```
 
-- **Backend API:** http://localhost:8000  
-- **Frontend Dashboard:** http://localhost:5173  
+- Backend API: `http://localhost:8000`
+- Frontend Dashboard: `http://localhost:5173`
 
 Login using the default admin credentials from the seeder (see `DatabaseSeeder.php`).
 
 ---
 
-# Preview
+## Preview
 
 ### Login Page
 ![Login Page](./assets/screenshots/login.png)
@@ -140,17 +128,16 @@ Login using the default admin credentials from the seeder (see `DatabaseSeeder.p
 ### Bookings Management
 ![Bookings Page](./assets/screenshots/bookings.png)
 
-
 ---
 
-## 📝 API Documentation
+## API Documentation
 
-All API endpoints with examples are included in the Postman collection.  
+Import the Postman collection included in the repository:
 
-You can import it directly in Postman:
+`backend/postman/Travel-Agency.postman_collection.json`
 
-1. Open Postman.
-2. Click **Import** → **File** → Select `backend/postman/Travel-Agency.postman_collection.json`.
-3. Start testing the endpoints.
+All protected endpoints require:
 
-The collection file is located in the repository at: `backend/postman/Travel-Agency.postman_collection.json`
+```
+Authorization: Bearer {token}
+```
